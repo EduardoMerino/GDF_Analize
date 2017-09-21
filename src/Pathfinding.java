@@ -36,9 +36,9 @@ public class Pathfinding {
 
 			} else {
 
-				for (int i = 0; i < currentNode.neighbours.size(); i++) {
+				for (int i = 0; i < currentNode.vertexOut.size(); i++) {
 
-					Node currentChild = currentNode.neighbours.get(i);
+					Node currentChild = currentNode.vertexOut.get(i);
 					// check if it hasn't been visited
 					if(!visited.containsKey(currentChild.id)){
 
@@ -84,8 +84,8 @@ public class Pathfinding {
 			}else{
 				//not the final node
 
-				for (int i = 0; i < current.neighbours.size(); i++) {
-					Node currentNeighbor = current.neighbours.get(i);
+				for (int i = 0; i < current.vertexOut.size(); i++) {
+					Node currentNeighbor = current.vertexOut.get(i);
 
 					if (!visited.contains(currentNeighbor)) {
 						visited.add(currentNeighbor);
