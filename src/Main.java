@@ -16,8 +16,8 @@ public class Main {
 		 * nodos: id,name
 		 * aristas: 
 		 */
-		File nodos = new File("/Users/Merino/Documents/TareasTec/BD_Avanzadas/prácticas/2.2/nodos.txt");
-		File aristas = new File("/Users/Merino/Documents/TareasTec/BD_Avanzadas/prácticas/2.2/aristas.txt");
+		File nodos = new File("full_path/nodes.txt");
+		File aristas = new File("full_path/vertex.txt");
 		System.out.println("Opening Files...");
 
 		//read files
